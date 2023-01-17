@@ -1,0 +1,27 @@
+body{
+    background-color:#ece8d9 ;
+}
+
+nav{
+    text-align: center;
+    padding: 50px;
+}
+
+.page-header{
+    height: 515px;
+    text-align: center;
+    margin-top: 108px;
+
+}
+
+div{
+    background-color: #faf6e9;
+    height: 450px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
