@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <title>My Landing Page</title>
 </head>
+
 <body>
-
-    <nav class="nav">
-        <a href="">home</a>
-        <a href="">about</a>
-        <a href="">projects</a>
-        <a href="">contact</a>
+  <header>
+    <nav class="text-right">
+      <ul>
+        <li> <a href="https://github.com/alexiaValen?tab=repositories">Github</a></li>
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#projects">Projects</a></li>
+        <li> <a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <header class="page-header">
-    <h1>Alexia Valenzuela</h1>
-    <h2>Full Stack Web Developer</h2>
-    <img src="./assets/images/Untitled design-3.png">
-    </header>
-
-    <div class="about">
-        about div
+  <main>
+    <div>
+    <h1 id="about" class="text-center">Alexia Valenzuela</h1>
+    <figure>
+      <img class="imgs" src="./assets/images/profile.jpg" alt="Graphic with Coming Soon text">
+      <h2>About Me</h2>
+      <figcaption class="text-center">Full Stack Web Developer</figcaption>
+      <p>
+        My name is Alexia Valenzuela and I am a bootcamp student. I describe myself as a passionate developer who loves coding, open source, and the web platform ❤️.
+        I am dedicated to grow as a developer and support other open source projects.
+      </p>
+    </figure>
     </div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <figure><a href="https://stevennevells.github.io/Study-Help-Application/">
+        <img src="./assets/images/study help app.png" alt="study help app" height="300px" width="550px"/>
+      </a></figure>
+      <figure><a href="https://glacial-sierra-66630.herokuapp.com/login">
+        <img src="./assets/images/parent view app.png" alt="parent view app" height="300px" width="550px"/>
+      </a></figure>
+    </section>
+    <section id="contact">
+      <h2 class="text-center">Contact Me</h2>
+      <form>
+        <ul>
+          <li>
+            <label class="text-right" for="name">Name:</label>
+            <input type="text" id="name" name="user-name">
+          </li>
+          <li>
+            <label class="text-right" for="email">Email:</label>
+            <input type="text" id="email" name="user-email">
+          </li>
+        </ul>
+        <div class="text-center">
+          <button type="submit">SEND</button>
+        </div>
+      </form>
+      <figure>
+        <div>
+          <a href="mailto:alexiavalen304@gmail.com"><img class="contact-icons" src="./assets/images/mail.png" alt="mail icon"></a>
+          <a href="https://www.linkedin.com/in/alexia-valenzuela-aa54b4236/"><img class="contact-icons" src="./assets/images/linkedin.png" alt="linked-in icon"></a>
+          <a href="https://github.com/alexiaValen"><img class="contact-icons" src="./assets/images/github.png" alt="github icon"></a>
+        </div>
+      </figure>
+    </section>
+  </main>
 
-    <div class="projects">
-        project div
-    </div>
-
-    <div class="contact">
-        contact div
-    </div>
-
-    <footer class="footer">
-        <p>alexiadevs :)</p>
-    </footer>
+  <footer class="text-center">
+    © 2023 Alexia Valenzuela 
+  </footer>
+    
 </body>
 </html>

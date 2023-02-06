@@ -1,27 +1,130 @@
-body{
-    background-color:#ece8d9 ;
+/* Universal Selector */
+* {
+  margin:0;
+  padding:0;  
 }
 
-nav{
-    text-align: center;
+/* Element Selectors */
+body {
+  position: relative;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 20px;
+  background-color: #FDF8F5;
+  color: #4F4846;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+main {
+  padding: 60px 0;
+}
+
+p {
+  padding: 50px;
+  text-align: left;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FDF8F5;
+}
+
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #ece8d9;
+}
+
+header {
+  position: fixed;
+}
+
+footer {
+  position: absolute;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 10px solid #4F4846;
+  color: #FDF8F5;    
+}
+
+figure {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.imgs {
+  display: block;
+  margin: 20px auto;
+  border-radius: 250px;
+  width: auto;
+
+}
+
+section {
+  margin-bottom: 0;
+    /* padding: 49px 10px 40px 10px; */
+    background-color: #dfd3c3;
+    height: 500px;
     padding: 50px;
+    padding-top: 400px;
 }
 
-.page-header{
-    height: 515px;
-    text-align: center;
-    margin-top: 108px;
 
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FDF8F5;
 }
 
-div{
-    background-color: #faf6e9;
-    height: 450px;
-    padding: 20px;
-    margin-top: 10px;
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #4F4846;
 }
 
-footer{
-    text-align: center;
-    padding: 20px;
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+}
+ 
+/* Class Selectors */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.contact-icons {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
 }
